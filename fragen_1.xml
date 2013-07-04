@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<EmbeddedSystems>
+	<qa>
+		<q>What does ES perfom? </q>
+		<a>complex control, communication or signal processing task </a>
+	</qa>
+	<qa>
+		<q>What does a ES consist of? </q>
+		<a>software and application specific hardware </a>
+	</qa>
+	<qa>
+		<q>How does a ES work? </q>
+		<a>often hidden(embedded) 
+		   - on one or more fixed tasks </a>
+	</qa>
+	<qa>
+		<q>What are ES often? </q>
+		<a>- fixed function, not programmable by the user
+		   - small and mobile
+		   - safety critical
+		   - cost critical
+		</a>
+	</qa>
+	<qa>
+		<q>Def.: System </q>
+		<a> A system is the composition of a number of components which together 
+			provide a limited but self contained functionality . </a>
+	</qa>
+	<qa>
+		<q>Def.: Embedded System(ES) </q>
+		<a>An embedded system (ES) is a system which is encapsulated into a
+		fixed system context. Within this context it provides a limited and fixed
+		functionality. It gains its value exclusively within this context. 
+		Example: 
+	   </a>
+	</qa>
+	<qa>
+		<q>Reactive System characteristics </q>
+		<a> - reactivity to their external context (wait for some event, then do something)
+		- production of responses (outputs) to inputs
+		- endless repetition of computations (never terminate on
+		  their own, instead wait on next event)
+
+		Such systems are called Reactive Systems.
+		</a>
+	</qa>
+	<qa>
+		<q>Def.: Real-Time (Embedded) Systems (RT-ES) </q>
+		<a> A real-time (embedded) system is a system in which the
+		correctness of the system behavior not only depends on
+		the logical correctness of the computation, but also on the
+		time at which these results are produced.</a>
+	</qa>
+	<qa>
+		<q>Def.: Hard Real-Time (Embedded) System (HRT-ES) </q>
+		<a>A hard real-time (embedded) system is a real-time ES in which the
+		failure to produce results at the right time can have severe
+		
+		RT-ES that are not HRT-ES may feature "graceful degradation"
+		of service quality if unable to meet timing.
+		</a>
+	</qa>
+	<qa>
+		<q>Characteristics of Control-Dominated Systems? </q>
+		<a>- Response to input events
+		- Internal state
+		- Generation of outputs</a>
+	</qa>
+	<qa>
+		<q>How is the functionality of a control-dominated system described? </q>
+		<a>it's described as (some sort of) state machine. e.g. alarm clock user interface. </a>
+	</qa>
+	<qa>
+		<q>Characteristics of Data-Dominated Systems? </q>
+		<a>- Input data streams
+		- Arithmetic computations
+		- Output data streams</a>
+	</qa>
+	<qa>
+		<q>How is the functionality of a data-dominated system described? </q>
+		<a>it's described as an algorithm or data flow diagram. e.g. digital image FIR filtering </a>
+	</qa>
+	<qa>
+		<q>What are the reasons and contraints/design descisions for cost/prices for ES? </q>
+		<a>Reason: market (competition, customers)
+		   Constraints/design desc.: 
+			- development cost(reuse, design automation)
+			- production cost (minimise HW/SW cost, compiler optimisation, chip size,...)
+			- life-cycle cost (reduce maintenance cost, reduce redemption time, ...)
+			</a>
+	</qa>
+	<qa>
+		<q>What are the reasons and contrains/design desc. for Time-To-Market/Money (TTM) for ES?</q>
+		<a>Reasons:
+			- competition
+			- customer demand
+			- legal obligations (contracts)
+			- trade show schedules (e.g. Cebit schedule, ...)
+		   Contraints/design desc.:
+		    - meet the deadline (concurrent design, reuse, prototyping, co-operation, design trade-offs...</a>
+	</qa>
+	<qa>
+		<q>What are the reasons and contrains/design desc. for Real-Time Constraints for ES? </q>
+		<a> Reasons: 
+			- In-time reaction on environmental events (sensor actor system, SRS ignition of airbag, ...)
+			- synchronisation between sub-systems ( protocols, control systems, ...)
+			- data streams with fixed frequency ( video processing, ...)
+			Contraints/design desc.:
+			- maximum latency (architecture, context switch, scheduling, ...)
+			- minimun throughput (architecture, pipelining, HW/SW trade-off, parallelism, ...)
+		</a>
+	</qa>
+	<qa>
+		<q>What are the reasons and contrains/design desc. for Safety Criticality for ES? </q>
+		<a>Reasons:
+			- Life threatening systems ( traffic control, automotive, medical care, ...)
+			- expensive systems (space borne systems, ... )
+		   Constraints:
+		   - proven correctness (safety analysis, formal methods, self-test, high test coverage, model checking
+		   - faul tolerance, reliability (redundancy, exception handling, ...)
+		   - robustness (mtbf analysis, safety margins, ...)</a>
+	</qa>
+	<qa>
+		<q>What are the reasons and contrains/design desc. for Physical constrains (TTM) for ES? </q>
+		<a>Reasons:
+			- mobile application (handheld, wireless, air borne, ...)
+			- hostile environment (industrial, air borne, automotive,...)
+			- miniaturisation ( implantable devices, micromachines,...)
+		   Constrains:
+			- size and weight (custom prozessor, minimisation of component count (=>SoC), ...)
+			- use of power/energy, battery life time (technology, circuit design, power management,...)
+			- temperature (technology, package, low-power design, ...)</a>
+	</qa><qa>
+		<q>What are the ES Engineering Tasks? </q>
+		<a> - Capture Specification, including functionality and constraints
+			point above is independent of the rest which is highly interdependent!
+			- Design Software
+			- Design Hardware
+			 - ASIC (Application Specific Integrated Circuit)
+			 - ASIP (Application Specific Instruction Set Processor)
+			 - DSP (Digital Signal Processor)
+			 - select standard components
+			- Design Communication
+			- Design Interfaces
+			- Design Memory Hierarchy
+			- Integrate System 
+			- Verify System (Constraints, Functionality)</a>
+	</qa>
+	<qa>
+		<q>What is a design flow? </q>
+		<a> - Describes a relationship between design tasks
+			- Order in which design tasks are performed
+			- Order can be influenced by conditions</a>
+	</qa>
+	<qa>
+		<q>Name a couple of ES Engineering Tools and their tasks. </q>
+		<a> - Simulators, to validate the specification and verify the implementation
+			- synthesis tools, to help generate the implementation
+			- estimators, to help analyse design options before implementation and explore the design space
+			- verification tools, to formally prove properties
+			- compilers/assemblers, to generate machine code
+			- profilers, to gain statistical information about applications
+			- debuggers, to support bug fixing
+			- analysis tools, to check implementation timing and other constraints</a>
+	</qa>
+</EmbeddedSystems>
