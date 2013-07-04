@@ -1,0 +1,9 @@
+c:\users\bmr\documents\visual studio 2010\Projects\QA\QA\bin\Debug\QA.exe
+c:\users\bmr\documents\visual studio 2010\Projects\QA\QA\bin\Debug\QA.pdb
+c:\users\bmr\documents\visual studio 2010\Projects\QA\QA\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\bmr\documents\visual studio 2010\Projects\QA\QA\obj\x86\Debug\QA.Form1.resources
+c:\users\bmr\documents\visual studio 2010\Projects\QA\QA\obj\x86\Debug\QA.Properties.Resources.resources
+c:\users\bmr\documents\visual studio 2010\Projects\QA\QA\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\bmr\documents\visual studio 2010\Projects\QA\QA\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\bmr\documents\visual studio 2010\Projects\QA\QA\obj\x86\Debug\QA.exe
+c:\users\bmr\documents\visual studio 2010\Projects\QA\QA\obj\x86\Debug\QA.pdb
